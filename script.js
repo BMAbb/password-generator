@@ -1,9 +1,20 @@
+// array of numeric digits
+var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
+
+// function for getting a random element from an array
+function getRandom(arr) {
+  var randElement = arr[Math.floor(Math.random() * arr.length)];
+  //console.log(randElement);
+  return randElement;
+}
+
 
 //input options function
 function inputOptions() {
 
   //console log to make sure the fucntion happened.....
-  console.log("Good job you called the function!!!");
+  //console.log("Good job you called the function!!!");
 
   // user input length
   var length = parseInt(
@@ -51,7 +62,7 @@ function inputOptions() {
 //password generation, this runs when you hit the button
 function generatePassword() {
 
-  // Password ouput variable
+  // declare password ouput variable
   var passwordOutput = [];
 
   // Get the options
@@ -60,9 +71,10 @@ function generatePassword() {
   // If options returned null, exit the function
   if (!options) return null;
 
-  // writes "test" the number of times input in the options
+  //adds a random number until the length of the password is long enough
   for (var i = 0; i < options.length; i++) {
-    passwordOutput.push("test ");
+    var numericAdd = getRandom(numericCharacters)
+    passwordOutput.push(numericAdd);
   }
 
   return passwordOutput.join("");
