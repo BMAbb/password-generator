@@ -1,68 +1,20 @@
 //ARRAYS
 
 // array of lowercase characters
-var lowerCasedCharacters = [
-  "a",
-  "b",
-  "c",
-  "d",
-  "e",
-  "f",
-  "g",
-  "h",
-  "i",
-  "j",
-  "k",
-  "l",
-  "m",
-  "n",
-  "o",
-  "p",
-  "q",
-  "r",
-  "s",
-  "t",
-  "u",
-  "v",
-  "w",
-  "x",
-  "y",
-  "z",
-];
+var lowerCasedCharacters = 'abcdefghijklmnopqrstuvwxyz'.split(
+  ''
+);
 
 // array of uppercase charaacters
-var upperCasedCharacters = [
-  "A",
-  "B",
-  "C",
-  "D",
-  "E",
-  "F",
-  "G",
-  "H",
-  "I",
-  "J",
-  "K",
-  "L",
-  "M",
-  "N",
-  "O",
-  "P",
-  "Q",
-  "R",
-  "S",
-  "T",
-  "U",
-  "V",
-  "W",
-  "X",
-  "Y",
-  "Z",
-];
+var upperCasedCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split(
+  ''
+);
 
 
 // array of numeric digits
-var numericCharacters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+var numericCharacters = '0123456789'.split(
+  ''
+);
 
 // array of special characters, list from owasp.org
 var specialCharacters = [
